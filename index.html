@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DAO Courtroom</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>GenLayer</h1>
+    <h2>DAO Courtroom</h2>
+
+    <button id="walletBtn" onclick="connectWallet()">
+  Connect Wallet
+</button>
+
+    <h3>Create Dispute</h3>
+
+    <textarea id="dispute" placeholder="Dispute"></textarea>
+    <textarea id="plaintiff" placeholder="Plaintiff Argument"></textarea>
+    <textarea id="defendant" placeholder="Defendant Argument"></textarea>
+
+    <button onclick="createCase()">Create Case</button>
+
+    <h3>Vote</h3>
+
+    <input id="caseId" placeholder="Case ID"/>
+
+    <button onclick="votePlaintiff()">Vote Plaintiff</button>
+    <button onclick="voteDefendant()">Vote Defendant</button>
+
+    <h3>Finalize Verdict</h3>
+
+    <input id="verdictCaseId" placeholder="Case ID"/>
+    <input id="verdictText" placeholder="AI Verdict"/>
+
+    <button onclick="finalizeCase()">Finalize Verdict</button>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
