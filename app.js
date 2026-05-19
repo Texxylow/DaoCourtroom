@@ -1,3 +1,4 @@
+console.log("ethers loaded:", ethers);
 const contractAddress = "0x54f6A5C8f6Af58FeB9D4B11CFB00b8e5dc87599A";
 
 const abi = [
